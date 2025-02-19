@@ -1,0 +1,338 @@
+body{
+    font-family: "Bebas Neue", serif;
+    background-color: black;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(https://assets.nflxext.com/ffe/siteui/vlv3/f268d374-734d-474f-ad13-af5ba87ef9fc/web/IN-en-20250210-TRIFECTA-perspective_92338d5d-6ccd-4b1a-8536-eb2b0240a55e_medium.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+}
+
+/* navbar */
+
+nav img{
+    width: 13%;
+}
+
+
+
+
+.hero-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.hero-first-p{
+    font-size: 1.5rem;
+    font-weight: 400;
+
+
+}
+.font-second-p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+form{
+    width: 60%;
+}
+form #floatinginput{
+    color: #fff;
+}
+form .form-control:focus{
+    border-color: #fff;
+    box-shadow: none;
+    border-width: medium;
+}
+
+form .form-floating>.form-control:focus~label {
+    color: rgba(255,255,255,0.7);
+}
+form .form-floating>.form-control :focus~label::after{
+    background-color: transparent;
+}
+
+form .form-floating{
+    width: 50%;
+    /* margin-left: 100px; */
+}
+form #floatinginput{
+    background: transparent;
+}
+form label{
+    color: rgba(255,255,255,0.7);
+    margin-left: 10px;
+}
+
+.get-started-btn{
+    height: 60px;
+    font-size: 1.5rem;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 20px;
+    background-color: red;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+
+.get-started-btn::after{
+    content:"\276f" ;
+    margin-left: 5px;
+}
+.get-started-btn :hover{
+    background-color: rgb(193,17,25);
+}
+
+.trending-section {
+    background-color: black;
+}
+.owl-carousel .item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.owl-carousel .item:hover img {
+    transform: scale(.9);
+}
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-prev,
+.owl-next {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.owl-prev {
+    left: -40px;  /* Adjust as needed */
+}
+/* Default styling for large screens */
+.owl-carousel .owl-nav .owl-next,.owl-prev {
+    background: rgba(30, 29, 29, 0.8) !important; /* Dark background */
+    color: #ccc !important; /* Light grey arrow */
+    border: none !important;
+    font-size: 24px !important;
+    cursor: pointer !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    right: -50px !important; /* Adjust the position */
+    border-radius: 10px !important; /* Rounded corners */
+    width: 30px !important;
+    height: 100px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Hover effect */
+.owl-carousel .owl-nav .owl-next:hover {
+    background: rgb(51, 47, 47) !important; /* Darker on hover */
+    color: white !important;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover {
+    background: rgb(51, 47, 47) !important; /* Darker on hover */
+    color: white !important;
+}
+
+/* Customizing the navigation arrows */
+.owl-carousel .owl-nav .owl-next span {
+    font-size: 32px !important;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 1024px) {
+    .owl-carousel .owl-nav .owl-next {
+        width: 40px !important;
+        height: 80px !important;
+        font-size: 20px !important;
+        right: -15px !important; /* Move it closer */
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .owl-carousel .owl-nav .owl-next {
+        width: 35px !important;
+        height: 70px !important;
+        font-size: 18px !important;
+        right: -10px !important; /* Move it even closer */
+    }
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 480px) {
+    .owl-carousel .owl-nav .owl-next {
+        width: 30px !important;
+        height: 60px !important;
+        font-size: 16px !important;
+        right: -5px !important; /* Align properly */
+    }
+}
+
+/* Ranking Number */
+.ranking {
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    font-size: 90px;
+    font-weight: bold;
+    color: rgb(14, 14, 14);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 2px rgb(248, 245, 245);
+}
+
+/* Custom Navigation */
+.owl-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.owl-nav button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.owl-nav button:hover {
+    color: red;
+}
+#cardsection{
+    background-color: black;
+    
+}
+
+body {
+    background-color: black;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #330760, #4f094d);
+    border-radius: 15px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+
+.info-card svg {
+   align-self: flex-end;
+}
+.faq-section h2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+.faq-section button{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}.faq-section .accordion{
+    --bs-accordion-color:rgb(255,255,255);
+    --bs-accordion-bg: rgb(45,45,45);
+    --bs-accordion-border-color:none;
+    --bs-accordion-border-radius:none;
+}
+.faq-section .accordion-item:first-of-type .accordion-button{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.faq-section .accordion-button:focus{
+    border: none;
+    box-shadow: none;
+}
+.faq-section .accordion-button:hover{
+    background-color: rgb(65,65,65);
+}
+.faq-section .accordion-button:not(.collapsed){
+    background-color: rgb(65,65,65);
+    color: rgb(255,255,255);
+}
+.faq-section .accordion-button::after{
+    content: "+";
+    background-image: none;
+    position: absolute;
+    height: 30px;
+    font-size: 50px;
+    top:5px;
+    right:45px;
+}
+
+footer p, footer a{
+  color: #cec2c2;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+}
+
+footer ul{
+    padding-left: 0;
+}
+footer li{
+    list-style-type: none;
+}
+
+footer select{
+    background: transparent;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    appearance: none;
+    border-radius: 5px;
+}
+
+
+
+footer .arrow-down{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    top: 15px;
+    right: -115px;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(67, 172, 229) !important;
+    color: white !important;
+}
+ 
+
+
+
+
+
+
